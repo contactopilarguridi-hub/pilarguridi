@@ -16,6 +16,8 @@
 body{background-color:#FDFCFB;background-image:radial-gradient(circle,rgba(196,96,43,0.15) 1.5px,transparent 1.5px);background-size:22px 22px;font-family:'Lato',sans-serif;color:#2C2C2A;max-width:480px;margin:0 auto;min-height:100vh}
 .fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .fade.in{opacity:1;transform:none}
+.slide-btn{opacity:0;transform:translateY(6px) scale(0.97);transition:opacity 1s ease-out,transform 1s ease-out}
+.slide-btn.in{opacity:1;transform:translateY(0) scale(1)}
 header{padding:40px 32px 28px;display:flex;align-items:center;gap:10px}
 .sp{stroke-dasharray:210;stroke-dashoffset:210;animation:ciclo 6s ease-in-out infinite}
 @keyframes ciclo{0%{stroke-dashoffset:210}40%{stroke-dashoffset:0}60%{stroke-dashoffset:0}85%{stroke-dashoffset:210}100%{stroke-dashoffset:210}}
@@ -93,7 +95,7 @@ footer{padding:24px 32px 48px;border-top:1px solid #EAE6E2}
 
 <section class="fade" style="transition-delay:.2s">
 <div class="srule"></div>
-<p style="font-size:12.5px;color:#2C2C2A;line-height:1.75;margin:0">Para dueña de casa, emprendedores, profesionales... entre otros</p>
+<p style="font-size:12.5px;color:#2C2C2A;line-height:1.75;margin:0">Para emprendedores, profesionales... entre otros</p>
 </section>
 
 <section class="fade" style="transition-delay:.3s">
@@ -113,7 +115,7 @@ footer{padding:24px 32px 48px;border-top:1px solid #EAE6E2}
 
 <section class="fade" style="transition-delay:.4s">
 <div class="srule"></div>
-<a href="https://wa.me/56993180389?text=Hola%20Pilar%2C%20me%20interesa%20tu%20asistente%20de%20IA" class="btn">Escríbeme</a>
+<a href="https://wa.me/56993180389?text=Hola%20Pilar%2C%20me%20interesa%20tu%20asistente%20de%20IA" class="btn slide-btn">Conversemos</a>
 <div class="process">
 <p><strong>1.</strong> Conversamos sobre tu caso</p>
 <p><strong>2.</strong> Diseño tu agente personalizado</p>
@@ -133,6 +135,7 @@ Compartir por WhatsApp
 <script>
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');obs.unobserve(x.target)}}),{threshold:.1});
 document.querySelectorAll('.fade').forEach(e=>obs.observe(e));
+document.querySelectorAll('.slide-btn').forEach(e=>obs.observe(e));
 const all=['ut1','m1','t1','m2','ut2','m3','t2','m4'];
 function reset(){all.forEach(id=>{const e=document.getElementById(id);if(e)e.style.display='none'})}
 function show(id){const e=document.getElementById(id);if(e)e.style.display='flex'}
