@@ -36,7 +36,7 @@ section{padding:0 32px 28px}
 .quote p+p{margin-top:12px}
 .tagline{font-size:15px;font-weight:700;color:#2C2C2A;margin-bottom:20px}
 .cred{font-size:12.5px;line-height:1.75;color:#9A9590}
-.btn{display:block;text-align:center;padding:15px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:700;border-radius:3px;text-decoration:none;font-family:'Lato',sans-serif}
+.btn{display:block;text-align:center;padding:15px;background:#C4602B;color:#fff;font-size:14px;font-weight:700;border-radius:3px;text-decoration:none;font-family:'Lato',sans-serif}
 .demo-label{font-size:10px;letter-spacing:2.5px;color:#9A9590;text-transform:uppercase;margin-bottom:16px}
 .chat{background:#fff;border:1px solid #EAE6E2;border-radius:12px;padding:20px 16px;min-height:340px}
 .msg{margin-bottom:16px;display:flex;flex-direction:column}
@@ -49,11 +49,15 @@ section{padding:0 32px 28px}
 .ba{background:#C4602B;color:#fff;border-radius:12px 12px 12px 3px}
 .typing-u{display:flex;gap:4px;padding:11px 14px;background:#F4EFE9;border-radius:12px 12px 3px 12px}
 .typing-a{display:flex;gap:4px;padding:11px 14px;background:#C4602B;border-radius:12px 12px 12px 3px}
+.process{font-size:12px;color:#2C2C2A;line-height:1.9;margin:0 0 16px 0}
+.process p{margin:0 0 8px 0}
+.process p:last-child{margin:0}
 footer{padding:24px 32px 48px;border-top:1px solid #EAE6E2}
 .fc{font-size:12px;color:#9A9590;line-height:1.9}
-.btn-share{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;color:#C4602B;font-size:12px;font-weight:700;border:1.5px solid #C4602B;border-radius:3px;padding:12px;margin-top:10px;transition:transform .12s ease,background .12s ease}
+.btn-share{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;color:#C4602B;font-size:12px;font-weight:700;border:1.5px solid #C4602B;border-radius:3px;padding:12px;transition:transform .12s ease,background .12s ease}
 .btn-share:active{transform:scale(0.95);background:rgba(196,96,43,0.08)}
 .btn:active{transform:scale(0.97)}
+.avatar{width:52px;height:52px;border-radius:50%;border:2px solid #C4602B;flex-shrink:0;background-size:cover;background-position:center}
 </style>
 </head>
 <body>
@@ -70,9 +74,10 @@ footer{padding:24px 32px 48px;border-top:1px solid #EAE6E2}
 <circle class="nd" cx="19.8" cy="3.1" r="2" fill="#C4602B"/>
 </svg>
 <div>
-<p style="font-size:18px;font-weight:700;color:#2C2C2A;font-family:'Playfair Display',serif">Pilar Guridi</p>
-<p style="font-size:10px;color:#C4602B;letter-spacing:1.2px;margin-top:3px;text-transform:uppercase">Implementación de Agentes IA</p>
+<p style="font-size:18px;font-weight:700;color:#2C2C2A;font-family:'Playfair Display',serif;margin:0">Pilar Guridi</p>
+<p style="font-size:10px;color:#C4602B;letter-spacing:1.2px;margin:3px 0 0 0;text-transform:uppercase">Implementación de Agentes IA</p>
 </div>
+<div class="avatar" style="background-image:url('avatar.png')"></div>
 </header>
 
 <section class="fade" style="transition-delay:.1s">
@@ -89,11 +94,7 @@ footer{padding:24px 32px 48px;border-top:1px solid #EAE6E2}
 
 <section class="fade" style="transition-delay:.2s">
 <div class="srule"></div>
-<a href="https://wa.me/56993180389?text=Hola%20Pilar%2C%20me%20interesa%20tu%20asistente%20de%20IA" class="btn">Escríbeme</a>
-<a href="https://wa.me/?text=Te%20comparto%20esto%3A%20https%3A%2F%2Fpilarguridi.cl" class="btn-share">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="#C4602B"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.532 5.858L.057 23.428a.75.75 0 00.916.916l5.57-1.475A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.355l-.355-.211-3.684.975.99-3.585-.232-.369A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-Compartir por WhatsApp
-</a>
+<p style="font-size:12.5px;color:#2C2C2A;line-height:1.75;margin:0">Para dueña de casa, emprendedores, profesionales... entre otros</p>
 </section>
 
 <section class="fade" style="transition-delay:.3s">
@@ -111,12 +112,22 @@ Compartir por WhatsApp
 </div>
 </section>
 
-<footer class="fade" style="transition-delay:.4s">
-<div class="fc">+56 9 9318 0389<br>contactopilarguridi@gmail.com<br>Santiago, Chile</div>
-<a href="/cv.pdf" target="_blank" class="btn-share" style="margin-top:16px">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="#C4602B"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
-Ver CV
+<section class="fade" style="transition-delay:.4s">
+<div class="srule"></div>
+<a href="https://wa.me/56993180389?text=Hola%20Pilar%2C%20me%20interesa%20tu%20asistente%20de%20IA" class="btn">Escríbeme</a>
+<div class="process">
+<p><strong>1.</strong> Conversamos sobre tu caso</p>
+<p><strong>2.</strong> Diseño tu agente personalizado</p>
+<p><strong>3.</strong> Entra en funcionamiento y lo vamos perfeccionando</p>
+</div>
+<a href="https://wa.me/?text=Te%20comparto%20esto%3A%20https%3A%2F%2Fpilarguridi.cl" class="btn-share">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="#C4602B"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.532 5.858L.057 23.428a.75.75 0 00.916.916l5.57-1.475A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.355l-.355-.211-3.684.975.99-3.585-.232-.369A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+Compartir por WhatsApp
 </a>
+</section>
+
+<footer class="fade" style="transition-delay:.5s">
+<div class="fc">+56 9 9318 0389<br>contactopilarguridi@gmail.com<br>Santiago, Chile</div>
 </footer>
 
 <script>
