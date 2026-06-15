@@ -103,13 +103,13 @@ footer{padding:24px 32px 48px;border-top:1px solid #EAE6E2}
 <p class="demo-label">Así trabaja tu asistente</p>
 <div class="chat">
 <div id="ut1" class="msg u" style="display:none"><span class="ml">Tú</span><div class="bub u"></div></div>
-<div id="m1" class="msg u" style="display:none"><span class="ml">Tú</span><div class="bub u">Reunión con Banco Chile en 1 hora, no me acuerdo qué quedamos la vez pasada</div></div>
+<div id="m1" class="msg u" style="display:none"><span class="ml">Tú</span><div class="bub u">¿En qué quedamos con el directorio la vez pasada?</div></div>
 <div id="t1" class="msg a" style="display:none"><span class="at">Tu asistente</span><div class="bub a"></div></div>
 <div id="m2" class="msg a" style="display:none"><span class="at">Tu asistente</span><div class="bub a">— La última vez acordaron retomar en junio con la propuesta para gerentes<br>— Quieren énfasis en eficiencia, no en tecnología<br><br>¿Te preparo los puntos clave?</div></div>
 <div id="ut2" class="msg u" style="display:none"><span class="ml">Tú</span><div class="bub u"></div></div>
 <div id="m3" class="msg u" style="display:none"><span class="ml">Tú</span><div class="bub u">Sí</div></div>
 <div id="t2" class="msg a" style="display:none"><span class="at">Tu asistente</span><div class="bub a"></div></div>
-<div id="m4" class="msg a" style="display:none"><span class="at">Tu asistente</span><div class="bub a">Listo:<br>— Abre con cuánto tiempo pierden en tareas repetitivas<br>— Caso concreto de su área comercial<br>— Piloto de 3 meses, fácil de evaluar<br>— No menciones tecnología — les importa el resultado<br><br>¿Te lo armo en PPT para llevar?</div></div>
+<div id="m4" class="msg a" style="display:none"><span class="at">Tu asistente</span><div class="bub a">Listo:<br>— Abre con cuánto tiempo pierden en tareas repetitivas<br>— Caso concreto de su área comercial<br>— Piloto de 3 meses, fácil de evaluar<br>— Cierra con próximos pasos concretos, no con preguntas abiertas<br><br>Te propongo armar una PPT de 4 diapositivas — una por punto — con los datos que ya tengo del contexto: métricas de tiempo perdido; caso del área comercial; propuesta del piloto; próximos pasos con fechas.<br><br>¿La preparo para tu aprobación?</div></div>
 </div>
 </section>
 
@@ -152,7 +152,7 @@ function run(){
   setTimeout(()=>{hide('ut2');show('m3')},21000);
   setTimeout(()=>show('t2'),24000);
   setTimeout(()=>{hide('t2');show('m4')},30000);
-  setTimeout(()=>run(),38000);
+  setTimeout(()=>run(),52000);
 }
 run();
 </script>
